@@ -1,5 +1,5 @@
-import "./contact.scss"
-import { Room, Send, Phone, Email, Public, Facebook, Instagram, LinkedIn, GitHub } from "@material-ui/icons"
+import "./contact.scss";
+import { Room, Send, Phone, Email, Public, Facebook, Instagram, LinkedIn, GitHub } from "@material-ui/icons";
 
 export default function Contact() {
     return (
