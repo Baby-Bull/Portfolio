@@ -1,6 +1,127 @@
 .contact{
-    background-color: lightblue;
-    align-items: center;
+    position: relative;
     display: flex;
+    align-items: center;
     justify-content: center;
+
+    h2.title{
+        position: absolute;
+        color: black;
+        top: 40px;
+        font-size: 40px;
+        z-index: 3;
+    }
+    .contactWrapper{
+        position: relative;
+        padding-left: 80px;
+        padding-right: 80px;
+        background-color: lightblue;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    
+        .contactLeft{
+            flex: 0.3;
+            height: 60%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            img{
+                object-fit: cover;
+                border-radius: 30px;
+            }
+        }
+        .contactRight{
+            flex: 0.7;
+            padding: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: -50px;
+    
+            .formContact{
+                flex: 0.7 1;
+                padding: 40px;
+                background: #a4abad;
+                border-radius: 15px;
+                z-index: 3;
+                box-shadow: 0px 10px 15px -5px black;
+                border: 3px #cecece solid;
+            
+    
+                .contactInput{
+                    display: grid;
+                    align-items: center;
+    
+                    .input{
+                        width: 95%;
+                        margin: 10px;
+                        height: 35px;
+                        border: 0.5px #b5b5b5 solid;
+                        border-radius: 5px;
+    
+                        &:focus{
+                            outline-style: none;
+                        }
+                    }
+                    .message{
+                        height: 100px;
+                    }
+                }
+                .buttonSend{
+                    float: right;
+                    margin: auto;
+                    padding: 10px;
+                    color: gray;
+                    font-weight: 500;
+                    border: 0.5px gray solid;
+                    border-radius: 5px;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .socialContact{
+                color: black!important;
+                flex: 0.3 1;
+                padding: 120px 90px 120px 120px;
+                background: white;
+                margin-left: -100px;
+                z-index: 2;
+                border-radius: 20px;
+                border: 3px #c3c3c3 solid;
+                box-shadow: 0px 5px 10px -5px black;
+                font-weight: 500;
+                font-size: 17px;
+
+                .firstItemsContact{
+                    width: 150%;
+
+                    .firstItem{
+                        display: flex;
+                        margin: 20px;
+
+                        p{
+                            margin-left: 20px;
+                        }
+                    }
+                }
+                .secondItemsContact{
+                    margin: 30px 0px -20px 30px;
+                    width: 100%;
+                    a{
+                        margin-left: 10px;
+                        color: rgb(41, 41, 41);
+
+                        &:hover{
+                            color: rgb(187, 187, 187);
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
 }
