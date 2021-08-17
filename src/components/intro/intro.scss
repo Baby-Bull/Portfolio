@@ -9,8 +9,22 @@
         align-items: center;
         flex-direction: column;
     }
+    .background{
+        position: absolute;
+        object-fit: cover;
+        height: 100%;
+        z-index: 3;
+        width: 100%;
+        overflow: hidden;
+        opacity: 0.5;
+        img{
+            width: 100%;
+            opacity: 0.3;
+        }
+    }
 
     .left{
+        z-index: 4;
         flex: 0.5;
         overflow: hidden;
         .imgContainer{
@@ -22,6 +36,7 @@
             margin: auto;
             border-radius: 50%;
             background-color: whitesmoke;
+            border: 5px white solid;
 
             @include mobile{
                 align-items: flex-start;
@@ -39,6 +54,7 @@
         }
     }
     .right{
+        z-index: 4;
         height: 100%;
         flex: 0.5;
         position: relative;

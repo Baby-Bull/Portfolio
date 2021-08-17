@@ -16,6 +16,9 @@ export default function Intro() {
 
     return (
         <div className="intro" id="intro">
+            <div className="background">
+                <img src="assets/backgr.jpg" alt="" />
+            </div>
             <div className="left">
                 <div className="imgContainer">
                     <img src="assets/ava2.jpg" alt="" />
@@ -23,7 +26,7 @@ export default function Intro() {
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>Hello guys, I'm</h2>
+                    <h2>Hello, I'm</h2>
                     <h1>Ngo Duc Thang</h1>
                     <h3>Student <span id="textRef" ref={textRef}></span></h3>
                 </div>
