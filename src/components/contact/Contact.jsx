@@ -7,7 +7,7 @@ export default function Contact() {
             <h2 className="title">Contact</h2>
             <div className="contactWrapper">
                 <div className="contactLeft">
-                    <img className="contactLeftImg" src="assets/contact.webp"></img>
+                    <img className="contactLeftImg" src="assets/contact.webp" alt="" ></img>
                 </div>
                 <div className="contactRight">
                     <form action="" className="formContact">
@@ -40,10 +40,10 @@ export default function Contact() {
                             </div>
                         </div>
                         <div className="secondItemsContact">
-                            <a href=""><Facebook style={{fontSize : 40}} /></a>
-                            <a href=""><Instagram style={{fontSize : 40}} /></a>
-                            <a href=""><GitHub style={{fontSize : 40}} /></a>
-                            <a href=""><LinkedIn style={{fontSize : 40}} /></a>
+                            <a href="#"><Facebook style={{fontSize : 40}} /></a>
+                            <a href="#"><Instagram style={{fontSize : 40}} /></a>
+                            <a href="#"><GitHub style={{fontSize : 40}} /></a>
+                            <a href="#"><LinkedIn style={{fontSize : 40}} /></a>
                         </div>
                     </div>
                 </div>
