@@ -40,10 +40,10 @@ export default function Contact() {
                             </div>
                         </div>
                         <div className="secondItemsContact">
-                            <a href="#"><Facebook style={{fontSize : 40}} /></a>
-                            <a href="#"><Instagram style={{fontSize : 40}} /></a>
-                            <a href="#"><GitHub style={{fontSize : 40}} /></a>
-                            <a href="#"><LinkedIn style={{fontSize : 40}} /></a>
+                            <a href="https://www.facebook.com/ducthangisme"><Facebook style={{fontSize : 40}} /></a>
+                            <a href="https://www.instagram.com/thang_ducng/"><Instagram style={{fontSize : 40}} /></a>
+                            <a href="https://github.com/Baby-Bull"><GitHub style={{fontSize : 40}} /></a>
+                            <a href="https://baby-bull.github.io/Personal-Profile/"><LinkedIn style={{fontSize : 40}} /></a>
                         </div>
                     </div>
                 </div>
