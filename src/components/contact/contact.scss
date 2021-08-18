@@ -36,7 +36,7 @@
         }
         .contactRight{
             flex: 0.7;
-            padding: 62px;
+            padding: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -94,10 +94,10 @@
                 border: 3px #c3c3c3 solid;
                 box-shadow: 0px 5px 10px -5px black;
                 font-weight: 500;
-                font-size: 17px;
+                font-size: 16px;
 
                 .firstItemsContact{
-                    width: 150%;
+                    width: 140%;
 
                     .firstItem{
                         display: flex;
@@ -110,7 +110,7 @@
                 }
                 .secondItemsContact{
                     margin: 30px 0px 0px 10px;
-                    width: 100%;
+                    width: 120%;
                     a{
                         margin-left: 10px;
                         color: rgb(41, 41, 41);
