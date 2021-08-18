@@ -36,7 +36,7 @@ export default function Contact() {
                             </div>
                             <div className="firstItem">
                                 <Public />
-                                <p>baby-bull.example.com</p>
+                                <p>baby-bull.example.com</p> 
                             </div>
                         </div>
                         <div className="secondItemsContact">
