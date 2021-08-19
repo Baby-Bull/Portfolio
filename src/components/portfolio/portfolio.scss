@@ -5,89 +5,192 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    position: relative;
 
-    h1{
-        font-size: 50px;
-        @include mobile{
-            font-size: 20px;
-        }
-    }
-    ul{
-        display: flex;
-        margin: 10px;
-        padding: 0;
-        list-style: none;
-        margin: 40px;
+    .portfolioModal{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.707);
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+        transition: all 1s in;
 
-        @include mobile{
-            margin: 10px 0;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        li{
-            font-size: 15px;
-            margin-right: 50px;
-            padding: 7px;
-            border-radius: 10px;
+        .closeItem{
+            margin: 50px;
+            float: right;
             cursor: pointer;
-            font-weight: 500;
 
-            &.active {
-                transition: all 0.5s ease;
-                background-color: #382256;
-                color: white;
+            &:hover{
+                color: rgb(179, 136, 136)!important;
+            }
+        }
+        .arrow{
+            height: 50px;
+            position: absolute;
+            cursor: pointer;
+            margin: 20% 0;
+            @include mobile {
+                display: none;
+            }
+    
+            &.left{
+                left: 100px;
+                transform:rotateY(180deg);
+            }
+            &.right{
+                right: 100px;
+            }
+        }
+        .productTitle{
+            position: absolute;
+            color: white;
+            right: 45%;
+            top: 5vh;
+            font-size: 50px;
+        }
+        .productSlide{
+            height: 450px;
+            display: flex;
+            position: absolute;
+            left: 0;
+            top: 100px;
+            transition: 1s all ease-out;
+
+            .container{
+                width: 100vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .slideItem{
+                    width: 850px;
+                    height: 100%;
+                    background-color: whitesmoke;
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .rightItem{
+                        flex: 0.65;
+                        overflow: hidden;
+                        height: 90%;
+
+                        img{
+                            padding: 20px;
+                            object-fit: cover;
+                        }
+                    }
+                    .leftItem{
+                        padding: 20px;
+                        margin-left: 20px;
+                        flex: 0.35;
+
+                        .itemSum{
+                            padding-bottom: 20px;
+                        }
+                        .itemDesc{
+                            padding-bottom: 50px;
+                        }
+                        .itemLink{
+
+                        }
+                    }
+                }
             }
         }
     }
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 60%;
-        transition: ease 0.5s all;
 
-        @include mobile{
-            width: 100%;
+    .portfolioWrapper{
+        position: absolute;
+        background-color: lightsteelblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+
+        h1{
+            font-size: 50px;
+            @include mobile{
+                font-size: 20px;
+            }
         }
-        
-        .item{
-            position: relative;
-            width: 220px;
-            height: 150px;
+        ul{
+            display: flex;
+            margin: 10px;
+            padding: 0;
+            list-style: none;
+            margin: 40px;
+    
+            @include mobile{
+                margin: 10px 0;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+    
+            li{
+                font-size: 15px;
+                margin-right: 50px;
+                padding: 7px;
+                border-radius: 10px;
+                cursor: pointer;
+                font-weight: 500;
+    
+                &.active {
+                    transition: all 0.5s ease;
+                    background-color: #382256;
+                    color: white;
+                }
+            }
+        }
+        .container{
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 10px 20px;
-            border-radius: 20px;
-            border: 1px solid rgb(240, 239, 239);
-            cursor: pointer;
-            transition: all 0.5s ease;
-
+            flex-wrap: wrap;
+            width: 60%;
+            transition: ease 0.5s all;
+    
             @include mobile{
-                width: 130px;
-                height: 100px;
-            }
-
-            img{
                 width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: 1;
             }
-            &:hover{
-                background-color: #382256;
-                img{
-                    opacity: 0.2;
-                    z-index: 0;
+            
+            .item{
+                position: relative;
+                width: 220px;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 20px;
+                border-radius: 20px;
+                border: 1px solid rgb(240, 239, 239);
+                cursor: pointer;
+                transition: all 0.5s ease;
+    
+                @include mobile{
+                    width: 130px;
+                    height: 100px;
                 }
-            }
-            h3{
-                position: absolute;
-                font-size: 20px;
-                color: whitesmoke;
+    
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: 1;
+                }
+                &:hover{
+                    background-color: #382256;
+                    img{
+                        opacity: 0.2;
+                        z-index: 0;
+                    }
+                }
+                h3{
+                    position: absolute;
+                    font-size: 20px;
+                    color: whitesmoke;
+                }
             }
         }
     }

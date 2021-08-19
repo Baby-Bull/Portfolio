@@ -99,6 +99,17 @@
                             }
     
                         }
+                        .skillContainer{
+                            width: 100%;
+                            background-color: #ddd;
+                            height: 20px;
+                            border-radius: 10px;
+                            .skill{
+                                text-align: right; 
+                                color: white;
+                                background-color: rgb(68, 68, 68);
+                            }
+                        }
     
                         h2{
                             font-size: 20px;

@@ -2,7 +2,7 @@ import { useState } from "react"
 import { dataWork } from "../../dataPortfolio"
 import "./works.scss"
 
-
+ 
 export default function Works() {
     const [slide, setSlide] = useState(0);
     const handleClick = (way) => {
@@ -10,7 +10,7 @@ export default function Works() {
     }
     return (
         <div className="works" id="works">
-            <h2>My Projects</h2>
+            <h2>My Skills</h2>
             <div className="slider" style={{ transform: `translateX(-${slide * 100}vw)` }}>
                 {
                     dataWork.map((data) => (
@@ -22,6 +22,9 @@ export default function Works() {
                                             <img src={data.icon} alt="" />
                                         </div>
                                         <h2>{data.title}</h2>
+                                        <div class="skillContainer">
+                                            <div style={{ width: data.rate }} class="skill">{data.rate}</div>
+                                        </div>
                                         <p>{data.desc}</p>
                                         <span>Projects</span>
                                     </div>
