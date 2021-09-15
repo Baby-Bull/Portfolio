@@ -92,7 +92,7 @@ export default function Portfolio() {
                                         </div>
                                         <div className="leftItem">
                                             <h3 className="itemSum">{singleSlide.sum}</h3>
-                                            <p className="itemDesc">{singleSlide.desc}</p>
+                                            <p className="itemDesc">{singleSlide.des}</p>
                                             <label className="labelItem">Source Code: </label>
                                             <a href={singleSlide.link} className="itemLink">{singleSlide.link}</a>
                                         </div>
