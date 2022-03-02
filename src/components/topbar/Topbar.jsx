@@ -9,7 +9,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                     <a href="#intro" className="logo">NDT</a>
                     <div className="itemContainer">
                         <Person className="icon" />
-                        <span>+84 37 848 2XXX</span>
+                        <span>+84 37 848 2367</span>
                     </div>
                     <div className="itemContainer">
                         <MailOutline className="icon" />

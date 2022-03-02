@@ -23,11 +23,11 @@ export default function Contact() {
                         <div className="firstItemsContact">
                             <div className="firstItem">
                                 <Room />
-                                <p>số 1, Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+                                <p>81 Hòa Bình 7, Minh Khai, Hai Bà Trưng, Hà Nội</p>
                             </div>
                             <div className="firstItem">
                                 <Phone />
-                                <p>037.848.XXXX</p>
+                                <p>037.848.2367</p>
                             </div>
                             <div className="firstItem">
                                 <Email />
